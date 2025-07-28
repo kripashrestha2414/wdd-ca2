@@ -26,10 +26,10 @@
 					<a class="nav-link" href="plastic-alt.html">Plastic Alternatives</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Sustainable Fashion</a>
+					<a class="nav-link" href="benita page 1.html">Sustainable Fashion</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Sustainable Fashion 2</a>
+					<a class="nav-link" href="benita page 2.html">Sustainable Fashion 2</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Food Waste</a>
@@ -106,7 +106,20 @@
 
   
   
-	<script> </script>
+	<script> 
+		document.getElementById("topic-form").addEventListener("submit", function(myEvent) {
+		myEvent.preventDefault(); //Prevent the form from submitting normally
+
+		const topicSelect = document.getElementById("topic");
+		const selectedValue = topicSelect.value;
+
+		if (selectedValue === "") {
+			alert("Please select a topic before continuing.");
+		} else {
+		window.location.href = selectedValue; //Redirect to the selected page
+		}
+	});
+	</script>
   
 </body>
 </html>
