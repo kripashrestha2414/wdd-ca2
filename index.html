@@ -92,11 +92,40 @@
 		</div>
 	</section>
 	
+	<!--Contact us form-->
 	<section class="container my-5">
-		
+		<h2 class ="text-center mb-4">Get in Touch</h2>
+		<div class="mx-auto" style="max-width: 1000px;">
+		<form id="contact-form" class="row g-3">
+			<div class="col-md-6">
+				<label for="name" class="form-label">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Your name" required>
+			</div>
+			<div class="col-md-6">
+				<label for="email" class="form-label">Email adress</label>
+				<input type="email" class="form-control" id="email" placeholder="name@email.com" required>
+			</div>
+			<div class="col-12">
+				<label for="topic" class="form-label">Topic</label>
+				<select id="topic" class="form-select" required>
+					<option value="">Choose...</option>
+					<option value="Plastic">Plastic Alternatives</option>
+					<option value="Fashion">Sustainable Fashion</option>
+					<option value="Food">Food Waste</option>
+				</select>
+			</div>
+			<div class="col-12">
+				<label for="message" class="form-label">Message</label>
+				<textarea class="form-control" id="message" rows="3" placeholder="Write your message here..." required></textarea>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-success w-100">Send</button>
+			</div>
+		</form>
+		</div>
 	</section>
  
-	<!-- Interactive Form -->
+	<!-- Interactive Form to let user chose drop down to go to a different page based on their interest area-->
 	<section class="container my-5">
 		<h2>Curious about what change you can make today?<br>
 		Select a topic below to begin your journey.</h2>
