@@ -25,21 +25,71 @@ h1{
 footer{
 	text-align:center;
 }
-img{
-	border-radius:50%;
-	border:10px solid #e7c484;
-	width:100px;
-	height:100px;
+
+/*styling for the logo*/
+.logo{
+ border-radius: 5%;
+ width: 300px;
+ height: 200px;
 	
 }
-
+/*styling for the shop gif*/
+.shop{
+ border-radius: 5%;
+ border: 5px solid #f7e5c3;
+ width: 300px;
+ height: 200px;	
+ 
+}
+/*styling for the laptop gif*/
+.laptop{
+ border-radius: 5%;
+ border: 5px solid #f7e5c3;
+ width: 300px;
+ height: 200px;	
+ 
+}
+/*styling for the earth gif*/
+.earth{
+ border-radius: 5%;
+ border: 5px solid #f7e5c3;
+ width: 300px;
+ height: 200px;
+}
+/*styling for the kotn image*/
+.kotn{
+ border-radius: 50%;
+ border: 10px solid #e7c484;
+ width: 200px;
+ height: 200px;
+}
+/*styling for the blooh logo image */
+.blooh{
+ border-radius: 50%;
+ border: 10px solid #e7c484;
+ width: 200px;
+ height: 200px;
+}
+/*styling for the cuyana  logo image */
+.cuyana{
+ border-radius: 50%;
+ border: 10px solid #e7c484;
+ width: 200px;
+ height: 200px;
+}
+/*styling for the pact logo image */
+.pact{
+ border-radius: 50%;
+ border: 10px solid #e7c484;
+ width: 200px;
+ height: 200px;
+}
+/*color for the third heading */
 h3{
 	color:#deb499;
 }
 
-
-
-
+/*color for the links in the texts*/
 a{
 	color:#fda88c;
 }
