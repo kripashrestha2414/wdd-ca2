@@ -57,9 +57,27 @@
 		</ol>
 		</section>
   
+	<!-- Random Tip Section -->
+	<section class="container my-5 text-center">
+		<h2>Try a Random Tip!</h2>
+		<button class="btn btn-success mt-3" onclick="showTip()">Get Eco Tip</button>
+		<p id="eco-tip" class="mt-3 text-muted"></p>
+	</section>
+
 </body>
 
-<script>    
-	
+	<script>    
+	//JS DOM Manipulation: Show a random eco tip
+	const tips = [
+		"Switch to reusable bags instead of plastic ones.",
+		"Choose bamboo toothbrushes over plastic ones.",
+		"Buy in bulk to reduce packaging waste.",
+		"Use beeswax wraps instead of cling film."
+	];
+
+	function showTip() {
+		const randomIndex = Math.floor(Math.random()*tips.length);
+		document.getElementById("eco-tip").textContent = tips[randomIndex];
+	}
 	</script>
 </html>
