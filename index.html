@@ -7,10 +7,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sustainable Solutions Collective</title>
+	<!--Link for Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	<!--Link to css file-->
 	<link rel="stylesheet" href="css/style.css"/>
+	<!--Link to font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -119,7 +122,7 @@
 				<textarea class="form-control" id="message" rows="3" placeholder="Write your message here..." required></textarea>
 			</div>
 			<div class="col-12">
-				<button type="submit" class="btn btn-success w-100">Send</button>
+				<button type="submit" class="btn btn-success">Send</button>
 			</div>
 		</form>
 		</div>
@@ -145,6 +148,27 @@
   
   
 	<script> 
+		document.getElementById('contact-form').addEventListener('submit', function (myEvent) { 
+		myEvent.preventDefault();
+		
+		var name = document.getElementById('name').value.trim();
+		var email = document.getElementById('email').value.trim();
+		var message = document.getElementById('message').value.trim();
+		var topic = document.getElementById('topic').value;
+
+		if (name === '' || email === '' || message === '' || topic === '') {
+			alert('Please fill out all fields before submitting.');
+		return;
+		}
+
+		if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+			alert('Please enter a valid email address.');
+		return;
+		}
+
+		alert('Thanks for contacting us, ' + name + '!'); // Optionally clear the form or redirect here
+		});
+
 		document.getElementById("topic-form").addEventListener("submit", function(myEvent) {
 		myEvent.preventDefault(); //Prevent the form from submitting normally
 
@@ -157,6 +181,8 @@
 		window.location.href = selectedValue; //Redirect to the selected page
 		}
 	});
+	
+	
 	</script>
   
 </body>
