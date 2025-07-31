@@ -112,7 +112,45 @@
 			<p>
 			Click <a href="index.html"><strong>here</strong></a>  to learn more about ways to help our planet.
 			</p>
-		 </section>	
+		 </section>
+
+		<section>			
+		
+		<h3>Complete this quick form to pleage to contribute to sustainablilty.</h3>
+								
+		   <!--form to input name and country-->			
+		<form onsubmit="handleSubmit(event)">
+			  <div id="input-area">
+				<label for="name">Name:</label>
+				<input type="text" id="name" required><br><br>
+
+				<label for="country">Country:</label>
+				<input type="text" id="country" required><br><br>
+
+				<button type="submit">Enter</button>
+			  </div>
+		</form>
+
+			<section>
+			  <h3>Message</h3>
+			  <h3 id="result"></h3>
+			</section>
+
+			<!--javascript to make result of form appear on the screen -->	
+			<script>
+			  function handleSubmit(event) {  //a unique name id needed for the function as a normal onclick="submit()" method messes with the form and browser.	
+				event.preventDefault(); 
+
+				var sName = document.getElementById("name").value;
+				var sCountry = document.getElementById("country").value;
+
+				var targetElement = document.getElementById("result");
+				targetElement.innerHTML = "Thank you " + sName + " from " + sCountry + ", for your pledge to sustainability.";
+			  }
+			</script>
+
+
+		</section>	
 		
 		
 		<!--copyright-->
