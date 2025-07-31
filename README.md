@@ -14,4 +14,4 @@ Conor - Food Waste
 - Git & GitHub
 
 # Project Status
-Folder structure and base files created.
+Code complete

@@ -3,6 +3,19 @@ body {
   font-family: 'PT Serif';
 }
 
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.nav-link {
+  color: #a0522d;
+}
+
+.nav-link:hover {
+  color: #deb499;
+}
+
 /*Benita CSS*/
 /* background color */
 body{
