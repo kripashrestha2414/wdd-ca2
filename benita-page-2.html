@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		  <!--title of the page-->
+		  <title>Sustainability</title>
+
+		  <!--bootstrap link-->
+		  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+		  <!--link to css file-->
+		  <link href="benita-css/style.css" rel="stylesheet"> 
+	</head>
+
+	<body>
+
+		  <header>
+			<!--image link for logo-->
+			<img src="benita-images/logo.png" alt="Sustainability logo" class="logo">
+		  </header>
+
+		  <section>
+			<!--intro text-->
+			<h1><em>Sustainable Fashion</em></h1>
+			<p>
+			  <strong><em>There are many brands that are committed to sustainability.
+			  Here are a few reputable brands and organisations.</em></strong>
+			</p>
+		  </section>
+
+		  <section>
+			  
+			<!--image link for KOTN-->
+			<img src="benita-images/kotn.jpg" alt="Picture of logo for the brand KOTN" class="kotn">
+
+			<p>
+			  <strong>1.</strong> <a href="https://kotn.com/">KOTN</a> is a Canadian-based fashion brand that sources its cotton from Egypt. Founded by three friends—Ben, Mackenzie, and Rami—KOTN was inspired by Rami's experiences during his trip back to his family home in Egypt and living in a cotton farming community in the Nile Delta for six months. KOTN sources its materials from local Egyptian cotton farms, uses a pricing method that provides farmers with compensation 35% above market rates, offers subsidies during difficult market conditions, and helps fund and build primary schools in the Nile Delta by partnering with local NGOs and donating a portion of proceeds from each order. To date, they have built 21 schools.
+			</p>
+		  </section>
+
+		  <section>
+			<!--image link for Blooh-->
+			<img src="benita-images/blooh.png" alt="Picture of logo for the brand Blooh" class="blooh">
+
+			<p>
+			  <strong>2.</strong> <a href="https://www.blooh.co/pages/about-us">Blooh</a> is a US-based Kenyan jewelry brand. The jewelry is sourced and handmade in workshops in Nairobi, Kenya, as well as vetted global partners who are committed to Blooh's priority of worker well-being, fair wages, and sustainability. They partner with small local businesses to limit resource use like water during production. All materials are locally sourced and products are made to order to reduce waste. To reduce plastic waste, shipping packaging is made of recyclable and compostable materials. From humble beginnings in 2021 partnering with local artisans in Nairobi, they have grown to multiple local and global workshops, empowering communities by allowing artisans to set their own rates.
+			</p>
+		  </section>
+
+		  <section>
+			<!--image link for Cuyana-->
+			<img src="benita-images/cuyana.png" alt="picture of logo for the brand Cuyana" class="cuyana">
+
+			<p>
+			  <strong>3.</strong> <a href="https://cuyana.com/">Cuyana</a> is a US-based handbag brand. Their products are 100% made from sustainably certified materials. They are committed to responsible production, selling through 90% of the products they make. The bags are handmade and all materials are responsibly sourced. They partner with craftsmen and women globally, from Ecuador to Italy. Their products are made with care and built to last.
+			</p>
+		  </section>
+
+		  <section>
+			<!--image link for Pact-->
+			<img src="benita-images/pact.png" alt="picture of logo for the brand Pact" class="pact">
+
+			<p>
+			  <strong>4.</strong> <a href="https://wearpact.com/">Pact</a> is a US-based clothing brand. They partner with Fair Trade USA, Global Organic Textile Standard, and SimpliZero. They ensure their factories provide safe working conditions. Their shipping materials are made from recycled paper. Their organic cotton is sourced from India, with most manufacturing happening in the world’s first fair trade-certified factory in Kolkata, India. Pact pays over 1 million dollars in fair trade premiums to ensure safe working conditions and provide development funds to on-site workers.
+			</p>
+		  </section>
+
+		  <section>
+			<!--link to first page-->
+			<p>Want to learn more about Sustainable Fashion? <a href="benita-page-1.html">Click here</a></p>
+		  </section>
+
+		  <section>
+			<!--form intro-->
+			<h3>Complete this quick form to pledge to contribute to sustainability.</h3>
+
+			<!--form for user input-->
+			<form onsubmit="handleSubmit(event)">
+			  <div id="input-area">
+				<label for="name">Name:</label>
+				<input type="text" id="name" required><br><br>
+
+				<label for="country">Country:</label>
+				<input type="text" id="country" required><br><br>
+
+				<button type="submit">Enter</button>
+			  </div>
+			</form>
+
+			<!--form result message-->
+			<section>
+			  <h3>Message</h3>
+			  <h3 id="result">Your message will appear here.</h3>
+			</section>
+
+			<!--form script-->
+			<script>
+			  function handleSubmit(event) {
+				event.preventDefault();
+
+				var sName = document.getElementById("name").value;
+				var sCountry = document.getElementById("country").value;
+
+				var targetElement = document.getElementById("result");
+				targetElement.innerHTML = "Thank you " + sName + " from " + sCountry + ", for your pledge to sustainability.";
+			  }
+			</script>
+		  </section>
+
+		  <section>
+			<!--link to homepage-->
+			<p>
+			  Click <a href="index.html"><strong>here</strong></a> to learn more about ways to help our planet.
+			</p>
+		  </section>
+
+		  <!--copyright-->
+		  <footer>
+			&copy; 2025 Sustain.inc All rights reserved
+		  </footer>
+
+	</body>
+	</html>
+
+
+		
+			
+		
+
+
+
